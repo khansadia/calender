@@ -2,54 +2,52 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
 body {
-    background-color: #dad7d7;
-    height: 80ch;
+    background-color: #e0dddd;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-
-
-.container {
-    width: 500px;
-    box-shadow: 1px 9px 24px #3a37371a;
-}
 li {
     list-style: none;
     text-align: center;
-    font-weight: 580px;
+    font-weight: 500;
+}
+
+.container {
+    width: 550px;
+    box-shadow: 1px 9px 24px #322f2f1a;
 }
 
 header {
-    background-color: #ec3838;
-    color: whitesmoke;
+    background-color: #fb2929;
+    color: #ffffff;
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding: 10px;
-    border-radius: 5cm 5cm 1 1;
-    
+    padding: 1rem;
+    border-radius: .3rem .3rem 0 0;
 }
 
 header .month {
-    font-size:10px;
-    font-weight: 580px;
-    padding: 2px 2px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1rem .1rem;
 }
 
 header .year {
-    font-size: 10px;
-    padding: 2px 2px;
+    font-size: 1.5rem;
+    padding: 1rem .1rem;
 }
 
 .material-symbols-outlined {
-    padding: 5px;
+    padding: .5rem;
     cursor: pointer;
 }
 
@@ -57,17 +55,15 @@ main {
     display: grid;
     grid-template-rows: auto 1fr;
 }
-.week-days {
-    background-color: rgb(180, 177, 177);
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-    
-}
-.month-days {
+
+.week-days, .month-days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 }
 
+.week-days {
+    background-color: #cccccc;
+}
 
 .week-days li {
     border: 1px solid #eeeeee7c;
@@ -81,7 +77,7 @@ main {
 }
 
 .month-days li {
-    border: 1px solid #d2c8c8;
+    border: 1px solid #eeeeee;
     padding: .7rem;
     display: flex;
     justify-content: center;
@@ -89,8 +85,8 @@ main {
 }
 
 .month-days .weekend-day{
-    background-color: #b7b7b7;
-    border: 2px solid #dad5d563;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc63;
 }
 
 .month-days p {
@@ -98,7 +94,7 @@ main {
 }
 
 .month-days .current-day p{
-    background-color: #ee3333;
+    background-color: #fe2c2c;
     color: #ffffff;
     border-radius: 50%;
 }
@@ -107,9 +103,9 @@ main {
     color: #b5b5b5;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .container {
-        width: 500px;
+        width: 400px;
         box-shadow: 1px 9px 24px #322f2f1a;
     }
 
@@ -135,9 +131,9 @@ main {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 425px) {
     .container {
-        width: 230px;
+        width: 250px;
         box-shadow: 1px 9px 24px #322f2f1a;
     }
 
