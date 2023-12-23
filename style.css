@@ -6,49 +6,50 @@
 }
 
 body {
-    background-color: #eeeeee;
-    height: 100vh;
+    background-color: #dad7d7;
+    height: 80ch;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+
+
+.container {
+    width: 500px;
+    box-shadow: 1px 9px 24px #3a37371a;
+}
 li {
     list-style: none;
     text-align: center;
     font-weight: 580px;
 }
 
-.container {
-    width: 500px;
-    box-shadow: 1px 9px 24px #3a37371a;
-}
-
 header {
-    background-color: #fe2c2c;
-    color: #ffffff;
+    background-color: #ec3838;
+    color: whitesmoke;
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding: 1rem;
-    border-radius: .3rem .3rem 0 0;
+    padding: 10px;
+    border-radius: 5cm 5cm 1 1;
+    
 }
 
 header .month {
-    font-size:
-    1.5rem;
+    font-size:10px;
     font-weight: 580px;
-    padding: 1rem .1rem;
+    padding: 2px 2px;
 }
 
 header .year {
-    font-size: 1.5rem;
-    padding: 1rem .1rem;
+    font-size: 10px;
+    padding: 2px 2px;
 }
 
 .material-symbols-outlined {
-    padding: .5rem;
+    padding: 5px;
     cursor: pointer;
 }
 
@@ -56,15 +57,17 @@ main {
     display: grid;
     grid-template-rows: auto 1fr;
 }
-
-.week-days, .month-days {
+.week-days {
+    background-color: rgb(180, 177, 177);
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    
+}
+.month-days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 }
 
-.week-days {
-    background-color: #cccccc;
-}
 
 .week-days li {
     border: 1px solid #eeeeee7c;
@@ -78,7 +81,7 @@ main {
 }
 
 .month-days li {
-    border: 1px solid #eeeeee;
+    border: 1px solid #d2c8c8;
     padding: .7rem;
     display: flex;
     justify-content: center;
@@ -86,8 +89,8 @@ main {
 }
 
 .month-days .weekend-day{
-    background-color: #eeeeee;
-    border: 1px solid #cccccc63;
+    background-color: #b7b7b7;
+    border: 2px solid #dad5d563;
 }
 
 .month-days p {
@@ -95,7 +98,7 @@ main {
 }
 
 .month-days .current-day p{
-    background-color: #fe2c2c;
+    background-color: #ee3333;
     color: #ffffff;
     border-radius: 50%;
 }
@@ -104,9 +107,9 @@ main {
     color: #b5b5b5;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .container {
-        width: 400px;
+        width: 500px;
         box-shadow: 1px 9px 24px #322f2f1a;
     }
 
@@ -132,9 +135,9 @@ main {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 380px) {
     .container {
-        width: 250px;
+        width: 230px;
         box-shadow: 1px 9px 24px #322f2f1a;
     }
 
